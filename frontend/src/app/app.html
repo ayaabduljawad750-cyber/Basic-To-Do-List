@@ -1,0 +1,14 @@
+<div class="parent">
+<div class="container">
+<h1>To-Do List</h1>
+
+<input [(ngModel)]="newTodo" placeholder="Enter todo" />
+<button (click)="addTodo()">Add</button>
+
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo.title }}
+  </li>
+</ul>
+</div>
+</div>
